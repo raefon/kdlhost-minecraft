@@ -1,0 +1,21 @@
+config-version = "2.7"
+bind = "0.0.0.0:25577"
+motd = "<white>VanillaMC</white><red>[1.8-1.21.4]</red><newline><dark_gray>Powered by kdlhost</dark_gray>"
+show-max-players = 100
+online-mode = true
+force-key-authentication = true
+prevent-client-proxy-connections = false
+forwarding-secret-file = "/mnt/shulker/forwarding-secret/key"
+player-info-forwarding-mode = "modern"
+
+[servers]
+lobby = "localhost:30000"
+limbo = "localhost:30001"
+try = ["lobby", "limbo"]
+
+[forced-hosts]
+
+[advanced]
+haproxy-protocol = false
+tcp-fast-open = true
+accepts-transfers = true
